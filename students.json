@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Yael Barzel",
+    "age": 22,
+    "email": "yael.barzel@example.com",
+    "grade": "A"
+  },
+  {
+    "id": 2,
+    "name": "Oren Cohen",
+    "age": 23,
+    "email": "oren.cohen@example.com",
+    "grade": "B"
+  },
+  {
+    "id": 4,
+    "name": "Eli Mizrahi",
+    "age": 24,
+    "email": "eli.mizrahi@example.com",
+    "grade": "C"
+  },
+  {
+    "id": 5,
+    "name": "Noa Friedman",
+    "age": 22,
+    "email": "noa.friedman@example.com",
+    "grade": "B"
+  },
+  {
+    "name": "Shira",
+    "age": 21,
+    "email": "shira@example.com",
+    "grade": "A",
+    "id": 6
+  }
+]

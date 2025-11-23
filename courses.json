@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Full Stack Development",
+    "description": "Learn Node.js, Express, React and databases.",
+    "teacher": "David Levi",
+    "duration": "12 weeks"
+  },
+  {
+    "id": 2,
+    "title": "Introduction to Cyber Security",
+    "description": "Basics of network security, encryption and risk analysis.",
+    "teacher": "Rina Cohen",
+    "duration": "8 weeks"
+  },
+  {
+    "id": 3,
+    "title": "Data Science Fundamentals",
+    "description": "Python, Pandas, data visualization and machine learning basics.",
+    "teacher": "Moshe Bar",
+    "duration": "10 weeks"
+  }
+]
