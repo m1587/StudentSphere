@@ -70,28 +70,10 @@ app.get('/courses/:id', (req, res) => {
 });
 
 app.post('/courses', (req, res) => {
-  const { title, teacher, description, duration } = req.body;
-
-  // 1. בדיקה שאין נתונים חסרים
-  if (!title || !teacher || !description || !duration) {
-    return res.status(400).json({
-      error: "Missing required fields",
-      required: ["title", "teacher", "description", "duration"]
-    });
-  }
-
   const courses = readCourses();
-  const newCourse = {
-    id: courses.length ? courses[courses.length - 1].id + 1 : 1,
-    title,
-    teacher,
-    description,
-    duration
-  };
-
+  const newCourse = { ...req.body, id: courses.length ? courses[courses.length - 1].id + 1 : 1 };
   courses.push(newCourse);
   writeCourses(courses);
-
   res.status(201).json(newCourse);
 });
 
