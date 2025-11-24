@@ -70,12 +70,21 @@ app.get('/courses/:id', (req, res) => {
 });
 
 app.post('/courses', (req, res) => {
+  const body = req.body.course || req.body;
+
   const courses = readCourses();
-  const newCourse = { ...req.body, id: courses.length ? courses[courses.length - 1].id + 1 : 1 };
+
+  const newCourse = { 
+    ...body, 
+    id: courses.length ? courses[courses.length - 1].id + 1 : 1 
+  };
+
   courses.push(newCourse);
   writeCourses(courses);
+
   res.status(201).json(newCourse);
 });
+
 
 // ====================== SERVER ======================
 
